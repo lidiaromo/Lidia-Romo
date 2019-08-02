@@ -1,12 +1,8 @@
 const http = require('http');
 
-
 const server = http.createServer((request, response) => {
- 
-   response.writeHead(200, {"Content-Type": "text/plain"});
-   
-   response.end("[  
-   {  
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("
       "DocEntry":89,
       "DocNum":89,
       "Status":"O",
@@ -33,14 +29,10 @@ const server = http.createServer((request, response) => {
       "ManBtchNum":"Y",
       "ManSerNum":"N",
       "ManagedBy":"Batch",
-      "ItemName":"BT tracked"
-   }
-]");
+      "ItemName":"BT tracked");
 });
 
-
-   const port = process.env.PORT || 1337;
+const port = process.env.PORT || 80;
 server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
-
