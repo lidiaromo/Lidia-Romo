@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((request, response) => {
-    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.writeHead(200, {"WorkOrderNo": "PO00000090"});
     response.end("WorkOrderNo:PO00000089");
 });
 
