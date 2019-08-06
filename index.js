@@ -2,12 +2,9 @@ const http = require('http');
 
 const server = http.createServer((request, response) => {
     response.writeHead(200, {
-        "DocEntry": 89,
-        "DocNum": 89,
         "Status": "O",
         "U_O_ORDRNO": "PO00000089",
         "WorkOrderNo": "PO00000089",
-        "U_O_DESC": null,
         "U_O_STATUS": "6",
         "U_O_PRODID": "Test_bt",
         "ProductId": "Test_bt",
