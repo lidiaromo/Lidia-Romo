@@ -20,11 +20,6 @@ const server = http.createServer((request, response) => {
         "U_O_ENDDATE": "2019-07-22T00:00:00",
         "U_O_SONO": 0.000000,
         "U_O_CUSTCODE": "",
-        "StartDate": "22/07/2019",
-        "EndDate": "22/07/2019",
-        "ManBtchNum": "Y",
-        "ManSerNum": "N",
-        "ManagedBy": "Batch",
         "ItemName": "BT tracked"});
     response.end("Api simulator Mobile move order");
 });
